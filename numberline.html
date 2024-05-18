@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Line Game</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="title-container">
+        <h1 class="title">Number Line Game</h1>
+    </div>
+    <div class="container">
+        <div class="slidecontainer">
+            <span id="negative-label">(NEGATIVE NUMBERS)</span>
+            <input type="range" min="-9" max="9" value="0" class="slider" id="myRange">
+            <span id="positive-label">(POSITIVE NUMBERS)</span>
+        </div>
+        <div class="ticks">
+            <div class="tick-label">-9</div>
+            <div class="tick-label">-8</div>
+            <div class="tick-label">-7</div>
+            <div class="tick-label">-6</div>
+            <div class="tick-label">-5</div>
+            <div class="tick-label">-4</div>
+            <div class="tick-label">-3</div>
+            <div class="tick-label">-2</div>
+            <div class="tick-label">-1</div>
+            <div class="tick-label">0</div>
+            <div class="tick-label">1</div>
+            <div class="tick-label">2</div>
+            <div class="tick-label">3</div>
+            <div class="tick-label">4</div>
+            <div class="tick-label">5</div>
+            <div class="tick-label">6</div>
+            <div class="tick-label">7</div>
+            <div class="tick-label">8</div>
+            <div class="tick-label">9</div>
+        </div>
+        <div class="container" id="additionGame">
+            <h2>Addition Game for Number Line</h2>
+            <!-- Addition Game Content -->
+            <p>Solve the addition problems:</p>
+            <div id="additionQuestions"></div>
+            <div id="additionUserInputContainer">
+                <!-- User Input for Addition Game -->
+            </div>
+            <button id="additionSubmitBtn">Submit</button>
+            <p id="additionResultMessage"></p>
+        </div>
+    
+        <p id="demo">0</p>
+        <div id="questionContainer">
+            <p id="questionText">Arrange the numbers in increasing order: (-6, 2, -3, 5)</p>
+        </div>
+        <div id="userInputContainer">
+            <input type="number" class="user-input" min="-9" max="9" placeholder="1">
+            <input type="number" class="user-input" min="-9" max="9" placeholder="2">
+            <input type="number" class="user-input" min="-9" max="9" placeholder="3">
+            <input type="number" class="user-input" min="-9" max="9" placeholder="4">
+        </div>
+        <button id="submitBtn">Submit</button>
+        <p id="resultMessage"></p>
+        
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
